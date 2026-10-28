@@ -1,0 +1,17 @@
+{
+  "name": "PhantomOperator Aeon Skill Pack",
+  "version": "1.0.0",
+  "description": "Authorized privacy and public-exposure checks through PhantomOperator's public API.",
+  "author": "normancomics",
+  "license": "MIT",
+  "homepage": "https://freysaai.freysa.dev",
+  "skills": [{
+    "slug": "phantomoperator",
+    "path": "skills/phantomoperator",
+    "description": "Invoke authorized privacy and public-exposure checks using the PhantomOperator API.",
+    "category": "basics",
+    "default_enabled": false,
+    "secrets_required": [],
+    "capabilities": ["external_api"]
+  }]
+}
