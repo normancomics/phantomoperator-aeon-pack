@@ -1,15 +1,15 @@
 {
   "name": "PhantomOperator Aeon Skill Pack",
   "version": "1.0.0",
-  "description": "Authorized privacy and public-exposure checks through PhantomOperator's public API.",
-  "author": "normancomics",
+  "description": "Bounded, authorized privacy and public-exposure checks through the external PhantomOperator API; Base x402 spend is capped at $0.50 per call and per run.",
+  "author": "PhantomOperator operators",
   "license": "MIT",
   "homepage": "https://freysaai.freysa.dev",
   "skills": [{
     "slug": "phantomoperator",
     "path": "skills/phantomoperator",
     "description": "Invoke authorized privacy and public-exposure checks using the PhantomOperator API.",
-    "category": "basics",
+    "category": "security",
     "default_enabled": false,
     "secrets_required": [],
     "capabilities": ["external_api"]
