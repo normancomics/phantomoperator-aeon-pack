@@ -12,6 +12,6 @@
     "category": "security",
     "default_enabled": false,
     "secrets_required": ["AEON_X402_WALLET_PRIVATE_KEY", "PHANTOMOPERATOR_PERSON_LOOKUP_ALLOWLIST"],
-    "capabilities": ["external_api"]
+    "capabilities": ["external_api", "writes_external_host", "onchain_writes"]
   }]
 }

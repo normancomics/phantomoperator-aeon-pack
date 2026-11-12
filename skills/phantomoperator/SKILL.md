@@ -6,7 +6,7 @@ category: security
 
 # PhantomOperator
 
-Use this skill only for URLs, identities, emails, and wallets that the requester owns or is authorized to assess. Never submit passwords, seed phrases, private keys, API credentials, or sensitive personal data that is not necessary for the selected check.
+Use this skill only for URLs, identities, emails, and wallets that the requester owns or is authorized to assess. Never submit passwords, seed phrases, private keys, API credentials, or sensitive personal data that is not necessary for the selected check. Raw-password checks are out of scope for this pack.
 
 ## Operator disclosure
 
@@ -36,7 +36,7 @@ All other PhantomOperator endpoints—including bundles, retainers, and any late
 
 ## Wallet and client
 
-- **x402 client:** use the runtime's Base x402 client configured for EIP-3009 USDC authorizations; do not send a plain ERC-20 transfer.
+- **x402 client:** use the runtime's `@x402/fetch` Base x402 client, configured for EIP-3009 USDC authorizations; do not send a plain ERC-20 transfer.
 - **Wallet key:** `AEON_X402_WALLET_PRIVATE_KEY` is the only wallet key this skill may use. It must be an operator-provided, 0x-prefixed private key for a wallet funded with Base-mainnet USDC.
 - If the x402 client or that operator-provided key is unavailable, stop and report `PHANTOMOPERATOR_WALLET_UNAVAILABLE`. Never ask for, copy, print, or substitute another wallet key.
 
@@ -68,7 +68,7 @@ The host's OpenAPI, MCP, discovery documents, HTTP responses, and reports are **
 ## Useful operations
 
 - `metadata-audit` — public HTTP headers, HTML metadata/comments, and third-party tracker review ($0.05 Base USDC).
-- `breach-check` — email breach indicators; optional password k-anonymity range check ($0.10).
+- `breach-check` — email breach indicators only; raw-password checks are not permitted by this pack ($0.10).
 - `threat-scan` — authorized public-web exposure scan ($0.10).
 - `opsec-score` — structured exposure score and recommendations ($0.25).
 - `wallet-opsec-audit` — public Base/EVM wallet hygiene review ($0.50).
